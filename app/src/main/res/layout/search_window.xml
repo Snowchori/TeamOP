@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingHorizontal="10dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/searchWindow">
+
+    <EditText
+        android:id="@+id/searchTitle_search_window"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="6"
+        android:paddingTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:hint="공모전명을 입력하세요"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        android:inputType="text"
+        android:singleLine="true"
+        android:privateImeOptions="defaultInputmode=korean"/>
+
+    <ImageButton
+        android:id="@+id/cancelBtn_search_window"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_cancel_white_24dp"/>
+
+</LinearLayout>

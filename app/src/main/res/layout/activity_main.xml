@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <include
+            layout="@layout/top_bar" />
+
+        <ScrollView
+            android:id="@+id/scrollView_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/viewPagerLayout_main"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp" >
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/firstBtn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/blue_point"
+                            android:background="#FFFFFF"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/secondBtn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/gray_point"
+                            android:background="#FFFFFF"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/thirdBtn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/gray_point"
+                            android:background="#FFFFFF"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageButton
+                            android:id="@+id/fourthBtn_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/gray_point"
+                            android:background="#FFFFFF"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp" >
+
+                        <ImageButton
+                            android:id="@+id/recommendBtn_main"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:src="@drawable/recommend"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"/>
+
+                        <ImageButton
+                            android:id="@+id/manageBtn_main"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="3dp"
+                            android:src="@drawable/manage"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/compList_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:divider="#565656"
+                        android:dividerHeight="1dp"
+                        android:padding="3dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

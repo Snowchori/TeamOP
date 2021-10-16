@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.opgrad">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="공모전 팀원 추천"
+        android:roundIcon="@drawable/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        >
+        <activity android:name=".InitActivity"
+            android:theme="@style/InitTheme"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="loginActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="registerActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="detailActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".MoreActivity"
+            android:label="moreActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".SearchAddress"
+            android:label="searchAddress">
+        </activity>
+
+        <activity
+            android:name=".CorrectionActivity"
+            android:label="correctionActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".RecommendActivity"
+            android:label="recommendActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".ManageActivity"
+            android:label="manageActivity"
+            android:launchMode="singleTask">
+        </activity>
+
+    </application>
+
+</manifest>

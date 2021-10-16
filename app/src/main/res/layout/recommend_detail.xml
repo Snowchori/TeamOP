@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="팀원 상세 정보"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/cancelBtn_recommend_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_cancel_white_24dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginVertical="3dp"
+            android:background="@color/colorAccent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이름 : " />
+
+                    <TextView
+                        android:id="@+id/member1Name_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="팀원 1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ성별 : " />
+
+                    <TextView
+                        android:id="@+id/member1Sex_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="남" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ나이 : " />
+
+                    <TextView
+                        android:id="@+id/member1Age_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="20" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ나와의 거리 : " />
+
+                    <TextView
+                        android:id="@+id/member1distance_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100km" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ응시구분 : " />
+
+                    <TextView
+                        android:id="@+id/member1Job_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="일반인" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ공모전 참가 횟수 : " />
+
+                    <TextView
+                        android:id="@+id/member1Participation_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5번 이상" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ희망역할 : " />
+
+                    <TextView
+                        android:id="@+id/member1Hoperole_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="팀장, PPT, 발표 등등..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ담당가능분야 : " />
+
+                    <TextView
+                        android:id="@+id/member1responsible_recommend_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="외향형E"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="마음" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="내향형I"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1mindA_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/mindABar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/mindBBar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1mindB_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="직관형N"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="에너지" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="현실주의형S"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1energyA_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/energyABar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/energyBBar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1energyB_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="이성적사고형T"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="본성" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="원칙주의형F"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1natureA_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/natureABar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/natureBBar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1natureB_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="계획형J"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="전술" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="탐색형P"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1tacticsA_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/tacticsABar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/tacticsBBar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1tacticsB_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="자기주장형A"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="자아" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="신중형T"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1selfA_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/selfABar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/selfBBar1_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1selfB_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember2_recommend_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member2Name_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="팀원 2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member2Sex_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member2Age_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member2distance_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="100km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member2Job_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="일반인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member2Participation_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5번 이상" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member2Hoperole_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="팀장, PPT, 발표 등등..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member2responsible_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2mindA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2mindB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2energyA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2energyB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2natureA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2natureB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2tacticsA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2tacticsB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2selfA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar2_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2selfB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember3_recommend_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member3Name_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="팀원 3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member3Sex_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member3Age_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member3distance_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="100km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member3Job_recommend_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="일반인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member3Participation_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5번 이상" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member3Hoperole_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="팀장, PPT, 발표 등등..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member3responsible_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3mindA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3mindB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3energyA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3energyB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3natureA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3natureB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3tacticsA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3tacticsB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3selfA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar3_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3selfB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember4_recommend_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member4Name_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="팀원 4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member4Sex_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member4Age_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member4distance_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="100km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member4Job_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="일반인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member4Participation_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5번 이상" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member4Hoperole_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="팀장, PPT, 발표 등등..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member4responsible_recommend_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4mindA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4mindB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4energyA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4energyB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4natureA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4natureB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4tacticsA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4tacticsB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4selfA_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar4_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4selfB_recommend_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sendMsgBtn_recommend_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:text="팀원 요청 보내기"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

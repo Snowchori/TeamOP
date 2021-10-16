@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="3dp" >
+
+        <TextView
+            android:id="@+id/teamName_sendTeam_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="팀 이름"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/compTitle_sendTeam_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7.5"
+            android:gravity="center"
+            android:text="공모전명"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/member1_sendTeam_list"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/member1Name_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="팀원1"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/member1State_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="수락"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/member2_sendTeam_list"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/member2Name_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="팀원2"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/member2State_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="거절"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/member3_sendTeam_list"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/member3Name_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="팀원3"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/member3State_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="대기"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/member4_sendTeam_list"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/member4Name_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="팀원4"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/member4State_sendTeam_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="대기"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="＞" />
+
+    </LinearLayout>
+
+</LinearLayout>

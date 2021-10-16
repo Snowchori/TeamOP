@@ -1,0 +1,2429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/custom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="팀원 상세 정보"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/cancelBtn_receive_team_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_cancel_white_24dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginVertical="3dp"
+            android:background="@color/colorAccent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ이름 : " />
+
+                    <TextView
+                        android:id="@+id/member1Name_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="팀장(리더)" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ성별 : " />
+
+                    <TextView
+                        android:id="@+id/member1Sex_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="남" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ나이 : " />
+
+                    <TextView
+                        android:id="@+id/member1Age_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ나와의 거리 : " />
+
+                    <TextView
+                        android:id="@+id/member1Distance_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100km" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ응시구분 : " />
+
+                    <TextView
+                        android:id="@+id/member1Job_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="일반인" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ공모전 참가 횟수 : " />
+
+                    <TextView
+                        android:id="@+id/member1Participation_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5번 이상" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ희망역할 : " />
+
+                    <TextView
+                        android:id="@+id/member1Hoperole_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="팀장, PPT, 발표 등등..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ㆍ담당가능분야 : " />
+
+                    <TextView
+                        android:id="@+id/member1Responsible_recieve_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="외향형E"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="마음" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="내향형I"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1mindA_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/mindABar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/mindBBar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1mindB_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="직관형N"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="에너지" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="현실주의형S"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1energyA_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/energyABar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/energyBBar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1energyB_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="이성적사고형T"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="본성" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="원칙주의형F"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1natureA_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/natureABar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/natureBBar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1natureB_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="계획형J"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="전술" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="탐색형P"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1tacticsA_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="22"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/tacticsABar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="22"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/tacticsBBar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="78"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1tacticsB_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="78"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="자기주장형A"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="자아" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="신중형T"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/member1selfA_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="44"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                        <View
+                            android:id="@+id/selfABar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="44"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <View
+                            android:id="@+id/selfBBar1_receive_team_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="10dp"
+                            android:layout_weight="56"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/member1selfB_receive_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="15"
+                            android:gravity="center"
+                            android:text="56"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="%"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember2_receive_team_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member2Name_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="virtual_2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member2Sex_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member2Age_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member2Distance_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="25km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member2Job_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="대학생" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member2Participation_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1~2번" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member2Hoperole_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="UI/UX, PPT" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member2Responsible_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="컴퓨터ㆍ통신, 디자인" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2mindA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="32"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="32"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="68"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2mindB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="68"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2energyA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="77"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="77"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="23"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2energyB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2natureA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="85"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="85"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="15"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2natureB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="15"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2tacticsA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="62"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="62"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="38"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2tacticsB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="38"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member2selfA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="93"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="93"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar2_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="7"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member2selfB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember3_receive_team_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member3Name_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="팀원 3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member3Sex_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member3Age_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member3Distance_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="100km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member3Job_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="일반인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member3Participation_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5번 이상" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member3Hoperole_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="팀장, PPT, 발표 등등..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member3Responsible_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3mindA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3mindB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3energyA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3energyB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3natureA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3natureB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3tacticsA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3tacticsB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member3selfA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar3_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member3selfB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/teamMember4_receive_team_detail"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="3dp"
+                        android:background="#565656" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ이름 : " />
+
+                        <TextView
+                            android:id="@+id/member4Name_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="팀원 4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ성별 : " />
+
+                        <TextView
+                            android:id="@+id/member4Sex_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="남" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나이 : " />
+
+                        <TextView
+                            android:id="@+id/member4Age_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ나와의 거리 : " />
+
+                        <TextView
+                            android:id="@+id/member4Distance_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="100km" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ응시구분 : " />
+
+                        <TextView
+                            android:id="@+id/member4Job_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="일반인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ공모전 참가 횟수 : " />
+
+                        <TextView
+                            android:id="@+id/member4Participation_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5번 이상" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ희망역할 : " />
+
+                        <TextView
+                            android:id="@+id/member4Hoperole_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="팀장, PPT, 발표 등등..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ㆍ담당가능분야 : " />
+
+                        <TextView
+                            android:id="@+id/member4Responsible_recieve_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="기계, 컴퓨터ㆍ통신, 음악" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="외향형E"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="마음" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="내향형I"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4mindA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/mindABar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/mindBBar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4mindB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="직관형N"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="에너지" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="현실주의형S"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4energyA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/energyABar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/energyBBar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4energyB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="이성적사고형T"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="본성" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="원칙주의형F"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4natureA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/natureABar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/natureBBar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4natureB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="계획형J"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="전술" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="탐색형P"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4tacticsA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/tacticsABar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/tacticsBBar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4tacticsB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="자기주장형A"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="자아" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="신중형T"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/member4selfA_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/selfABar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <View
+                                android:id="@+id/selfBBar4_receive_team_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="50"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/member4selfB_receive_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="15"
+                                android:gravity="center"
+                                android:text="50"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:text="%"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp" >
+
+                    <Button
+                        android:id="@+id/acceptBtn_receive_team_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수락"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/refuseBtn_receive_team_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="거절"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="classification">
+        <item>일반인</item>
+        <item>대학생</item>
+        <item>청소년</item>
+        <item>어린이</item>
+    </string-array>
+
+    <string-array name="numberOfEntries">
+        <item>0번</item>
+        <item>1~2번</item>
+        <item>3~4번</item>
+        <item>5번 이상</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>naver.com</item>
+        <item>koreatech.ac.kr</item>
+    </string-array>
+
+</resources>

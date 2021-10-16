@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="반드시 필요한 역량"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential1CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential1TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="건축"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential2CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential2TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="기계"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential3CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential3TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="소재ㆍ재료"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential4CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential4TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="전기ㆍ전자"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential5CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential5TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="컴퓨터ㆍ통신"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential6CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential6TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="일반 교육"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential7CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential7TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="특수 교육"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential8CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential8TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="경영ㆍ경제"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential9CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential9TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="법률"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential10CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential10TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="사회ㆍ복지"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential11CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential11TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="언론ㆍ방송"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential12CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential12TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="정치ㆍ외교"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential13CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential13TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="디자인"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential14CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential14TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="무용"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential15CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential15TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="연극ㆍ영화"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential16CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential16TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="미술"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential17CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential17TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="음악"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential18CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential18TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="영상ㆍ사진"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential19CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential19TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="의약"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential20CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential20TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="언어ㆍ문학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential21CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential21TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="인문학"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential22CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential22TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="수학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential23CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential23TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="물리"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential24CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential24TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="화학"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/essential25CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential25TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="생물"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential26CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential26TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="지구과학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/essential27CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/essential27TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="추가적으로 원하는 역량"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional1CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional1TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="건축"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional2CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional2TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="기계"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional3CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional3TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="소재ㆍ재료"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional4CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional4TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="전기ㆍ전자"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional5CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional5TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="컴퓨터ㆍ통신"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional6CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional6TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="일반 교육"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional7CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional7TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="특수 교육"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional8CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional8TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="경영ㆍ경제"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional9CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional9TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="법률"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional10CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional10TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="사회ㆍ복지"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional11CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional11TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="언론ㆍ방송"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional12CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional12TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="정치ㆍ외교"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional13CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional13TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="디자인"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional14CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional14TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="무용"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional15CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional15TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="연극ㆍ영화"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional16CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional16TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="미술"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional17CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional17TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="음악"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional18CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional18TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="영상ㆍ사진"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional19CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional19TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="의약"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional20CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional20TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="언어ㆍ문학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional21CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional21TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="인문학"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional22CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional22TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="수학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional23CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional23TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="물리"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional24CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional24TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="화학"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/additional25CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional25TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="생물"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional26CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional26TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="지구과학"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/additional27CB_recommend_second"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/additional27TV_recommend_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp" >
+
+        <Button
+            android:id="@+id/previousBtn_recommend_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="이전" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/nextBtn_recommend_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="다음" />
+
+    </LinearLayout>
+
+</LinearLayout>

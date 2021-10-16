@@ -1,0 +1,245 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout_drawer"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/homeImage_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_home_black_24dp" />
+
+            <ImageView
+                android:id="@+id/loginImage_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/homeImage_drawer"
+                android:padding="5dp"
+                android:src="@drawable/ic_person_black_24dp"/>
+
+<!--            correction -->
+            <ImageView
+                android:id="@+id/correctionImage_drawer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/loginImage_drawer"
+                android:padding="5dp"
+                android:src="@drawable/ic_info_outline_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/logoutImage_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/correctionImage_drawer"
+                android:padding="5dp"
+                android:src="@drawable/ic_logout_24dp"/>
+
+            <ImageView
+                android:id="@+id/closeImage_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_cancel_white_24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/interestAreaLayout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/interestArea_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="3dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="관심분야"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/moreInterestAreaImage_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/interestAreaList_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/targetLayout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/target_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="3dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="응시대상자"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/moreTargetImage_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/targetList_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hostLayout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/host_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="3dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="주최사"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/moreHostImage_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/hostList_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/awardsLayout_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/awards_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="3dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="시상내역"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/moreAwardsImage_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_expand_more_black_24dp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/awardsList_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
